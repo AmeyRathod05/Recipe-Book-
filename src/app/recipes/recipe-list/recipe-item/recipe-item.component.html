@@ -1,0 +1,19 @@
+<a href="#" class="list-group-item list-group-item-action flex-column align-items-start"
+(click)="onSelected()">
+            <div class="d-flex">
+
+                <div class="w-100 justify-content-between">
+                    <h5 class="mb-1">{{ recipe.name }}</h5>
+                    
+                    <p class="mb-1">{{ recipe.description }}</p>
+                </div>
+                <div>
+                    <img
+                    [src]="recipe.imagePath"
+                    alt="{{ recipe.name }}"
+                    class="img-responsive" style="max-height: 50px;">
+                    
+                </div>
+            </div>
+                
+          </a>
